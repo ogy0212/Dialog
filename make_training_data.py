@@ -20,7 +20,7 @@ if __name__ == '__main__':
     num_use_uttr = 2
     use = 0
     not_use = 0
-    tokenizer = BertJapaneseTokenizer.from_pretrained('bert-base-japanese-whole-word-masking')
+    tokenizer = BertJapaneseTokenizer.from_pretrained('cl-tohoku/bert-base-japanese-whole-word-masking')
     file_name = f'training_data'
     with open(f'./data/{file_name}.txt', 'a', encoding='utf-8') as ff:
         files = glob.glob('./data/tweet_data_*.txt')
